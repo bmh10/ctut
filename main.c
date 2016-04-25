@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include "util.h"
 
+int global = 5;
+
 struct User
 {
   int age;
@@ -52,6 +54,7 @@ int main()
  
   num = add(1, 2); 
   printf("%d\n", num);
+  printf("%d\n", gb());
   return 0;
 }
 
