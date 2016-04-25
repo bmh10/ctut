@@ -1,11 +1,32 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "util.h"
 
 struct User
 {
   int age;
   char *name;
 };
+
+void loopEx(int num)
+{
+  for ( ; num < 100; num++)
+  {
+    printf("%d ", num);
+  }
+}
+
+void string_funcs()
+{
+  char *s1 = "ben";
+  char *s2 = "benj";
+  strcmp(s1, s2);
+}
+
+void file_funcs()
+{
+  FILE *f;
+}
 
 int main()
 {
@@ -14,13 +35,7 @@ int main()
   scanf("%d", &num);
   printf("Entered: %d\n", num);
   getchar();
-
-  for ( ; num < 100; num++)
-  {
-    printf("%d ", num);
-  }
-
-  printf("\nRandom: %d\n", rand());
+  loopEx(num);
 
   int *p = &num;
   printf("Page: %d\n", get_page(p));
@@ -34,8 +49,9 @@ int main()
   strcpy(ben.name, n); 
   printf("%s is %d\n",up->name, up->age);
   free(ben.name);
-  
-
+ 
+  num = add(1, 2); 
+  printf("%d\n", num);
   return 0;
 }
 
