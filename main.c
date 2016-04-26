@@ -4,6 +4,12 @@
 
 int global = 5;
 
+enum Flavour
+{
+  Chocolate,
+  Banana
+}
+
 struct User
 {
   int age;
@@ -33,6 +39,7 @@ void file_funcs()
 int main()
 {
   int num;
+  puts("Using puts to print a string");
   printf("Enter number:\n");
   scanf("%d", &num);
   printf("Entered: %d\n", num);
