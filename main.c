@@ -8,7 +8,7 @@ enum Flavour
 {
   Chocolate,
   Banana
-}
+};
 
 struct User
 {
